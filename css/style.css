@@ -3,6 +3,10 @@ a {
     text-decoration: none;
     color: black;
 }
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
 
 .nav-item img {
     width: 25px;
@@ -11,6 +15,9 @@ a {
 .my-li li{
     padding-left: 20px;
 }
+/* .row  {
+    border-top: 1px solid grey;
+} */
 .block1-photo img{
     width: 100%;
 
@@ -67,6 +74,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     
 }
 .center {
@@ -84,7 +92,18 @@ a {
 }
 .gallery-flex {
     align-self: center;
-    padding-top: 50px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+img {
+    width: 100%;
+}
+.navbar-nav.my-li {
+    display: flex;
+    flex-direction: row;
+}
+.feature-block1 {
+    text-align: center;
 }
 
 .feature-display {
@@ -101,10 +120,13 @@ a {
 .gallery-pad {
     margin: 10px auto 10px auto ;
 }
+/* borders */
 .feature-block {
     border-right: 1px solid grey;
     border-bottom: 1px solid grey;
 }
+
+
 .no-pad {
     padding: 0;
 }
@@ -114,6 +136,29 @@ a {
 .no-right {
     border-right: none;
 }
+@media screen and (max-width: 800px) {
+    .three {
+        border-right: 1px solid grey;
+    }
+    .four {
+        border-bottom: 1px solid grey;
+        border-right: none;
+    }
+    .two {
+        border-right: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .one, .three, .five  {
+        border-right: none;
+
+    }
+    .five, .six {
+        border-bottom: 1px solid grey; 
+    }
+}
+/* borders */
+
 .form-container {
     width: 70%;
     margin: 20px auto 20px auto;
@@ -157,6 +202,7 @@ a {
 }
 button {
     border-color: rgba(128, 128, 128, 0.308);
+    margin-bottom: 20px;
 }
 
 img {
